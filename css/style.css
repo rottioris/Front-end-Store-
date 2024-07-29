@@ -1,4 +1,3 @@
-
 :root {
   /* Background Colors */
   --color-bg: #ffffff; /* General Background color */
@@ -20,6 +19,8 @@
   --button-text: #ffffff; /* Button text color */
   --price-color: #000000; /* Price text color */
   --text-color: #000000; /* General text color */
+
+  --font-family: "Poppins", sans-serif;
 
   /*index :root */
 }
@@ -90,5 +91,73 @@ img {
 }
 
 /* Utilities end */
+
+/* Estilo del contenedor del header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+/* Estilo del contenedor de navegación */
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+/* Estilo del logo */
+.logo {
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+
+.logo__name {
+  font-size: 2rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* Estilo del contenedor de enlaces de navegación */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* Estilo de los enlaces de navegación */
+.nav__a {
+  font-size: 1.6 rem;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: var(--font-family);
+}
+
+/* Estilo de los enlaces en hover */
+.nav__a:hover {
+  color: #007bff;
+}
+
+/* Estilo del icono */
+.nav-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-icon svg {
+  fill: #000;
+  cursor: pointer;
+}
 
 /* Index.html end*/
